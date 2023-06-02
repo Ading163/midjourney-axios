@@ -1,4 +1,4 @@
-# midjourney-wjd
+# midjourney-axios
 
 Node.js client for the unofficial MidJourney API.
 

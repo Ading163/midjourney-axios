@@ -1,6 +1,6 @@
 {
   "name": "midjourney-axios",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js client for the unofficial MidJourney API.",
   "main": "libs/index.js",
   "types": "libs/index.d.ts",

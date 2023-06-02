@@ -46,8 +46,8 @@ To run the included example, you must have [Node.js](https://nodejs.org/en/) ins
 1. clone the repository
 
 ```bash
-git clone git@github.com:Ading163/midjourney-WJD.git
-cd midjourney-wjd
+git clone git@github.com:Ading163/midjourney-axios.git
+cd midjourney-axios
 ```
 
 2. install dependencies

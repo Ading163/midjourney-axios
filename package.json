@@ -1,6 +1,6 @@
 {
-  "name": "midjourney",
-  "version": "2.3.0",
+  "name": "midjourney-axios",
+  "version": "1.0.1",
   "description": "Node.js client for the unofficial MidJourney API.",
   "main": "libs/index.js",
   "types": "libs/index.d.ts",
@@ -18,21 +18,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erictik/midjourney-api.git"
+    "url": "git@github.com:Ading163/midjourney-WJD.git"
   },
   "keywords": [
-    "midjourney-api",
+    "midjourney-axios",
     "midjourney"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=14.18"
   },
-  "author": "Eric Yang <yanghao@10d.xin>",
-  "license": "ISC",
+  "author": "ding010 <ading010@163.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erictik/midjourney-api/issues"
+    "url": "https://github.com/Ading163/midjourney-WJD"
   },
-  "homepage": "https://github.com/erictik/midjourney-api#readme",
+  "homepage": "https://github.com/Ading163/midjourney-WJD",
   "devDependencies": {
     "@types/node": "^18.16.0",
     "@types/ws": "^8.5.4",
@@ -44,11 +44,12 @@
   },
   "dependencies": {
     "@huggingface/inference": "^2.5.0",
+    "axios": "^1.4.0",
+    "isomorphic-ws": "^5.0.0",
     "p-queue": "^6.6.2",
     "snowyflake": "^2.0.0",
     "throat": "^6.0.2",
     "tslib": "^2.5.0",
-    "ws": "^8.13.0",
-    "isomorphic-ws": "^5.0.0"
+    "ws": "^8.13.0"
   }
 }

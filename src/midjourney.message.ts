@@ -8,7 +8,7 @@ import {
 } from "./interfaces";
 import { CreateQueue } from "./queue";
 import { sleep } from "./utls";
-
+import axios from 'axios';
 export class MidjourneyMessage {
   private magApiQueue = CreateQueue(1);
   public config: MessageConfig;
@@ -150,17 +150,25 @@ export class MidjourneyMessage {
   }
   async RetrieveMessages(limit = this.config.Limit) {
     const headers = { authorization: this.config.SalaiToken };
-    const response = await fetch(
-        `${this.config.DiscordBaseUrl}/api/v10/channels/${this.config.ChannelId}/messages?limit=${limit}`,
-      {
-        headers: headers,
+
+    try {
+      const response = await axios.get(
+        `${this.config.DiscordBaseUrl}/api/v10/channels/${this.config.ChannelId}/messages`,
+        {
+          params: { limit: limit },
+          headers: headers,
+        }
+      );
+
+      if (response.status !== 200) {
+        this.log("error config", { config: this.config });
+        this.log(`HTTP error! status: ${response.status}`);
       }
-    );
-    if (!response.ok) {
-      this.log("error config", { config: this.config });
-      this.log(`HTTP error! status: ${response.status}`);
+
+      return response.data;
+    } catch (error) {
+      console.log(error);
     }
-    const data = await response.json();
-    return data;
   }
+
 }

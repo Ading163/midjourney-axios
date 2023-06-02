@@ -1,17 +1,12 @@
-# midjourney-api
+# midjourney-wjd
 
 Node.js client for the unofficial MidJourney API.
 
-<div align="center">
-	<p>
-		<a href="https://discord.gg/GavuGHQbV4"><img src="https://img.shields.io/discord/1082500871478329374?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/midjourney"><img src="https://img.shields.io/npm/v/midjourney.svg?maxAge=3600" alt="npm version" /></a>
-	</p>
-</div>
 
-[discord bot example](https://github.com/erictik/midjourney-discord-wrapper/)
-
-[web ui example](https://github.com/erictik/midjourney-ui/)  
+## illustrate
+```bash
+兼容 nodejs 18以下版本 使用 axios 代替 fetch 
+```
 
 ## Install
 
@@ -51,8 +46,8 @@ To run the included example, you must have [Node.js](https://nodejs.org/en/) ins
 1. clone the repository
 
 ```bash
-git clone https://github.com/erictik/midjourney-api.git
-cd midjourney-api
+git clone git@github.com:Ading163/midjourney-WJD.git
+cd midjourney-wjd
 ```
 
 2. install dependencies
@@ -85,14 +80,3 @@ npx tsx example/upscale-ws.ts
 ```bash
 npx tsx example/variation-ws.ts
 ```
-
-
-## route-map
-- [x] websocket get message
-- [x] call back error
-- [ ] add `/info`  `/fast` and `/relax`
-
-
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=erictik/midjourney-api&type=Date)](https://star-history.com/#erictik/midjourney-api&Date)

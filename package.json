@@ -1,6 +1,6 @@
 {
   "name": "midjourney-axios",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js client for the unofficial MidJourney API.",
   "main": "libs/index.js",
   "types": "libs/index.d.ts",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:Ading163/midjourney-WJD.git"
+    "url": "git@github.com:Ading163/midjourney-axios.git"
   },
   "keywords": [
     "midjourney-axios",
@@ -30,9 +30,9 @@
   "author": "ding010 <ading010@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ading163/midjourney-WJD"
+    "url": "https://github.com/Ading163/midjourney-axios"
   },
-  "homepage": "https://github.com/Ading163/midjourney-WJD",
+  "homepage": "https://github.com/Ading163/midjourney-axios",
   "devDependencies": {
     "@types/node": "^18.16.0",
     "@types/ws": "^8.5.4",

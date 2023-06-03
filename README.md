@@ -13,13 +13,13 @@ Node.js client for the unofficial MidJourney API.
 npm
 
 ```bash
-npm i midjourney
+npm i midjourney-axios
 ```
 
 yarn
 
 ```bash
-yarn add midjourney
+yarn add midjourney-axios
 ```
 
 ## Usage
